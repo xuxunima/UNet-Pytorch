@@ -54,7 +54,7 @@ def predict_net(net, image_path, save_path, image_size, gpu):
     full_image = merge_image(pred_left, pred_right, original_w)
     io.imsave(save_path, full_image)
 
-def predict_men_net(net, image_path, save_path, image_size, gpu):
+def predict_mem_net(net, image_path, save_path, image_size, gpu):
     net.eval()
     img = Image.open(image_path)
     original_w, original_h = img.size[0], img.size[1]
@@ -116,7 +116,7 @@ if __name__ == "__main__":
         print("Load model from ", args.load)
 
     #predict_net(net, image_path, output_path, image_size, args.gpu)
-    predict_men_net(net, image_path, output_path, image_size, args.gpu)
+    predict_mem_net(net, image_path, output_path, image_size, args.gpu)
 
 
 

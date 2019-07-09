@@ -4,7 +4,7 @@ This repository is a simple implementation of the [UNet](https://arxiv.org/abs/1
 
 ## Overview
 ### ISBI
-The original data contains 30 512*512 images, and I used 25 for train and just 5 for valdation. After 30 epochs training, the dice is about 0.94. Because 30 images are not enough to train such a neural network, you can implement data augmentation to get more data.
+The original dataSet contains 30 images of size 512*512, 25 of which were employed for training process and the rest for validation. After 30 epochs training, the dice is about 0.94. Because 30 images are not enough to train such a neural network, you can implement data augmentation to get more data.
 The trained [model](https://github.com/xuxunima/UNet-Pytorch/releases/tag/model2) can be found here.
 
 
